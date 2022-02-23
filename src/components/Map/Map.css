@@ -2,5 +2,6 @@
 
 #mapMain {
     grid-area: b;
-    
+    height: 300px;
+    background: gray;
 }

@@ -3,10 +3,10 @@ import "./Coordinates.css";
 
 export default function Coordinates() {
   // state variables
-  const [IP, setIP] = useState("Loading...");
-  const [location, setLocation] = useState("Loading...");
-  const [timezone, setTimezone] = useState("Loading...");
-  const [ISP, setISP] = useState("Loading...");
+  const [IP, setIP] = useState("--");
+  const [location, setLocation] = useState("--");
+  const [timezone, setTimezone] = useState("--");
+  const [ISP, setISP] = useState("--");
 
   //API call
   useEffect(() => {

@@ -48,8 +48,8 @@ body {
   position: relative;
 
   display: grid;
-  grid-template: 249px calc(100vh - 249px) / 1fr;
+  grid-template: 249px calc(100vh - 249px) / 1fr 375px 1fr;
   grid-template-areas:
-    "a"
-    "b";
+    ". a ."
+    ". b .";
 }
