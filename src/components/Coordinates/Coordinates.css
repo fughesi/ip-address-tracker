@@ -4,6 +4,7 @@
   position: absolute;
   top: 22%;
   left: calc(50vw - 125px);
+  z-index: 2;
 
   padding: 1em;
   width: 250px;

@@ -11,12 +11,16 @@ export default function Coordinates() {
   //API call
   useEffect(() => {
     fetch(
-      "https://geo.ipify.org/api/v2/country,city?apiKey=at_wqE4QzgMbHPp0sxYo8gSNrE0JbDvX&ipAddress=8.8.8.8"
+      "https://geo.ipify.org/api/v2/country,city?apiKey=at_wqE4QzgMbHPp0sxYo8gSNrE0JbDvX"
     )
       .then((res) => res.json())
       .then((data) => {
         setIP(data.ip);
-        setLocation([data.location.region, data.location.country, data.location.postalCode]);
+        setLocation([
+          data.location.region,
+          data.location.country,
+          data.location.postalCode,
+        ]);
         setTimezone(data.location.timezone);
         setISP(data.isp);
       });
