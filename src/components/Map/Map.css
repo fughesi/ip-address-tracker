@@ -1,1 +1,6 @@
 @import url(../../App.css);
+
+#mapMain {
+    grid-area: b;
+    
+}

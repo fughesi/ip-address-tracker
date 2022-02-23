@@ -1,1 +1,40 @@
 @import url(../../App.css);
+
+#searchMain {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+
+  width: 100%;
+}
+
+form {
+  display: flex;
+
+  width: 250px;
+}
+
+input[type="text"] {
+  height: 50px;
+  width: 90%;
+  
+  border: none;
+  padding: 1.2em;
+  border-radius: 10px 0 0 10px;
+  color: var(--veryDarkGray);
+  
+  transition: ease-in-out, width 0.35s ease-in-out;
+}
+
+input[type="text"]:focus {
+    transform: scale(1.1);
+}
+
+.runButton {
+  height: 50px;
+  width: 50px;
+
+  border: none;
+  background: var(--black);
+  border-radius: 0 10px 10px 0;
+}
