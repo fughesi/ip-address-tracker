@@ -6,6 +6,11 @@
   --darkGray: hsl(0, 0%, 59%);
 
   /* sizes */
+  --p: 10px;
+  --h3: 16px;
+  --h1: 22px;
+
+  /* weights */
   --thin: 400;
   --reg: 500;
   --bold: 700;
@@ -25,8 +30,10 @@
 }
 
 *:focus {
-  outline: yellow;
-  outline-offset: 1rem;
+  outline: hsl(0, 0%, 87%);
+  outline-offset: 3px;
+  outline-width: 0 0 0 3px;
+  outline-style: solid;
 }
 
 body {
@@ -38,8 +45,10 @@ body {
 }
 
 .AppWrap {
+  position: relative;
+
   display: grid;
-  grid-template: 35vh 65vh / 1fr;
+  grid-template: 249px calc(100vh - 249px) / 1fr;
   grid-template-areas:
     "a"
     "b";

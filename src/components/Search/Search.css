@@ -17,17 +17,13 @@ form {
 input[type="text"] {
   height: 50px;
   width: 90%;
-  
+
   border: none;
   padding: 1.2em;
   border-radius: 10px 0 0 10px;
   color: var(--veryDarkGray);
-  
-  transition: ease-in-out, width 0.35s ease-in-out;
-}
 
-input[type="text"]:focus {
-    transform: scale(1.1);
+  transition: ease-in-out, width 0.35s ease-in-out;
 }
 
 .runButton {
@@ -37,4 +33,7 @@ input[type="text"]:focus {
   border: none;
   background: var(--black);
   border-radius: 0 10px 10px 0;
+  box-shadow: -5px 0 5px #0003 ;
+
+  cursor: pointer;
 }

@@ -8,6 +8,7 @@
   flex-direction: column;
 
   background-image: url("../../images/pattern-bg.png");
+  background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
 }
@@ -15,6 +16,7 @@
 h1 {
   margin: 1em auto;
 
+  font-size: var(--h1);
   font-weight: var(--reg);
   color: var(--white);
 }
